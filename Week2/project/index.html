@@ -5,11 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #1f545c;
+      text-align: center;
+      color: white;
+    }
+
+    #app {
+      width: 50%;
+      margin: auto;
+
+    }
+
+    .header {}
+
+    i {
+      padding: 40px 15px 15px 15px;
+    }
+
+    .set-timer {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .plus {
+      border: none;
+      text-decoration: none;
+      background-color: none;
+    }
+
+    .session {
+      border: #13363a 5px solid;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app">
-
+    <div class="header">
+      <h1>Pomodoro Clock</h1>
+      <h3>Session Length</h3>
+    </div>
+    <div class="set-timer">
+      <button id="plus">+</button>
+      <h1 class="time-set">25</h1>
+      <button id="minus">-</button>
+    </div>
+    <div class="session">
+      <h2>Session</h2>
+      <h1 class="count-down">25:00</h1>
+    </div>
+    <div class="btn">
+      <i style="font-size:24px" class="fa play">&#xf04b;</i>
+      <i style="font-size:24px" class="fa pause">&#xf04c;</i>
+      <!-- <i style="font-size:24px" class="fa">&#xf04d;</i> -->
+    </div>
   </div>
   <script src="index.js"></script>
 </body>

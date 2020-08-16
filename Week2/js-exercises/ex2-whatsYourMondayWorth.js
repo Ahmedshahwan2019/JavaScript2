@@ -14,6 +14,12 @@
 
 function dayWorth(tasks, hourlyRate) {
   // put your code in here, the function does returns a euro formatted string
+  // let mondayRate = tasks.map(rate => (Math.round(rate.duration / 60) * hourlyRate)); 
+
+  //for shorting the code I implement the solution in the return
+
+  return tasks.map(rate => (Math.round(rate.duration / 60) * hourlyRate));;
+
 }
 
 const mondayTasks = [{

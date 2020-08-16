@@ -10,6 +10,14 @@
 
 function createHTMLList(arr) {
   // your code goes in here
+  let item = document.querySelector('#item')
+  arr.map(hobbies => {
+    let li = document.createElement('li')
+    li.textContent = hobbies;
+    item.appendChild(li)
+  })
+
+
 }
 
 const myHobbies = [
@@ -19,3 +27,4 @@ const myHobbies = [
   'Hanging out with friends',
   'Going to the gym',
 ];
+createHTMLList(myHobbies)
