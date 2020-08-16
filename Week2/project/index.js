@@ -9,7 +9,7 @@
  * 
  */
 
-//  Note: the project is not complete
+//  Note: the project is not complete i
 
 
 const increaseBtn = document.getElementById('plus')
