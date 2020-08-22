@@ -29,10 +29,32 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
   // make array
+  for (let i = startIndex; i <= stopIndex; i++) {
+    numbers.push(i);
+  }
+  console.log(numbers);
   // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+  for (let i = 0; i < numbers.length; i++) {
+    const numberOfArray = numbers[i];
+    console.log(numberOfArray);
+    if (numberOfArray % 3 === 0 && numberOfArray % 5 !== 0) {
+      threeCallback(numberOfArray);
+    } else if (numberOfArray % 3 === 0 && numberOfArray % 3 !== 0) {
+      fiveCallback(numberOfArray);
+    } else if (numberOfArray % 3 === 0 && numberOfArray % 5 === 0) {
+      threeCallback(numberOfArray);
+      fiveCallback(numberOfArray);
+    }
+  }
 }
 
-threeFive(10, 15, sayThree, sayFive);
+function sayThree(number) {
+  console.log(` ${number} is divide by 3 `);
+}
 
+function sayFive(number) {
+  console.log(` ${number} is divide by 5 `);
+}
 // Should create an array [10,11,12,13,14,15]
 // and call sayFive, sayThree, sayThree, sayFive
+threeFive(10, 15, sayThree, sayFive);

@@ -12,10 +12,24 @@ does not return anything but removes any duplicate elements from the array.
 
 
 // WRITE YOUR FUNCTION HERE
+function removeDuplicates(arr) {
+  console.log('this is the original array', arr);
+  const uniqueLetters = new Set(arr);
+  console.log('return only the unique letter', uniqueLetters);
+  const backToArray = [...uniqueLetters];
+  console.log('convert the obj to array ', backToArray);
+  if (JSON.stringify(backToArray) === JSON.stringify(['a', 'b', 'c', 'd', 'e', 'f'])) {
+    console.log("Hooray")
+  }
+  // console.log(BackToArray);
+
+
+}
+
 
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
 
-removeDuplicates(letter);
+removeDuplicates(letters);
 
-if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
-  console.log("Hooray!")
+// if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
+//   console.log("Hooray!")

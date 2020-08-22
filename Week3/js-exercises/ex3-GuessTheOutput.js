@@ -19,3 +19,6 @@ const x = (function () {
 })();
 
 x();
+
+/* the output of this question it will be 12 into the Alert and that happened because of the global
+ variable has been assigned inside the x function  */

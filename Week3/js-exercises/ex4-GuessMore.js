@@ -16,6 +16,7 @@ function f1(val) {
 }
 f1(x);
 console.log(x);
+/* the console will print out the variable of x so the output will be 9 */
 
 const y = {
   x: 9
@@ -27,3 +28,4 @@ function f2(val) {
 }
 f2(y);
 console.log(y);
+/* the console will print out the whole obj of y */
