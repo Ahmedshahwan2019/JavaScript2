@@ -40,5 +40,9 @@ const mondayTasks = [{
   },
 ];
 
-console.log(dayWorth(mondayTasks, 25))
-console.log(dayWorth(mondayTasks, 13.37))
+let total1 = dayWorth(mondayTasks, 25)
+const sumOfTheTotal1 = total1.reduce((acc, currentResult) => acc + currentResult, 0);
+console.log(`your hourly rate on a Monday would be ${sumOfTheTotal1} $`)
+let total2 = dayWorth(mondayTasks, 13.37)
+const sumOfTheTotal2 = total2.reduce((acc, currentResult) => acc + currentResult, 0);
+console.log(`your hourly rate on a Monday would be ${Math.round(sumOfTheTotal2)} $`)

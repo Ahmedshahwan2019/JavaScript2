@@ -16,8 +16,6 @@ function createHTMLList(arr) {
     li.textContent = hobbies;
     item.appendChild(li)
   })
-
-
 }
 
 const myHobbies = [
